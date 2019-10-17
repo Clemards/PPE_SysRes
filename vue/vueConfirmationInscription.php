@@ -1,0 +1,1 @@
+<h1> Bravo tu es inscrit </h1>
