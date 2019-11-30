@@ -13,8 +13,12 @@ $listePoste = getPostes();
 $listeType = getTypes();
 
 // traitement si necessaire des donnees recuperees
-;
-
+if (isset($_POST["numPoste"]) && isset($_POST["nomPoste"]) && isset($_POST["typePoste"]) && isset($_POST["numSalle"])) {
+    $_POST["nomPoste"] =  trim($_POST["nomPoste"], " ");
+    if($_POST["nomPoste"] != "" && $_POST["nomPoste"] != " ") {
+        updatePoste($_POST["nomPoste"], $_POST["typePoste"], $_POST["numSalle"], $_POST["numPoste"]);
+    }
+};
 // appel du script de vue qui permet de gerer l'affichage des donnees
 $titre = "Modifier des postes";
 include "$racine/vue/entete.html.php";
