@@ -7,6 +7,6 @@
     <input type="text" name="pseudoU" placeholder="Nom" /><br />
  <hr>
 
-    <input type="submit" value="S'inscrire" class="btn btn-succes"/>
+    <input type="submit" value="S'inscrire" class="btn btn-success"/>
 
 </form>
