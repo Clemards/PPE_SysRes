@@ -4,6 +4,7 @@
     $lesActions = array();
     $lesActions["defaut"] = "accueil.php";
     $lesActions["connexion"] = "connexion.php";
+    $lesActions["det"] = "detailSalle.php";
     $lesActions["liste"] = "listeSalles.php";
     $lesActions["inscription"] = "inscription.php";
     $lesActions["deconnexion"] = "deconnexion.php";

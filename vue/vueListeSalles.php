@@ -8,7 +8,7 @@ for ($i = 0; $i < count($listeSalle); $i++) {
     <div class="row">
         <div class="col-md-12">
            <div class="card">
-              <?php echo "<a href='./?action=detail&idS=" . $listeSalle[$i]['nSalle'] . "'>" . $listeSalle[$i]['nomSalle'] . "</a>"; ?>
+              <?php echo "<a href='./?action=det&idS=" . $listeSalle[$i]['nSalle'] . "'>" . $listeSalle[$i]['nomSalle'] . "</a>"; ?>
                <br />
                Nombre de poste : <?= $listeSalle[$i]["nbPoste"] ?>
                <br />
