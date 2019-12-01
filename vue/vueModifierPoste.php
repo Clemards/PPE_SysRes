@@ -40,6 +40,7 @@
             <input type="text" name ="nomPoste" d="nomPostM" placeholder="Nom du poste" /><br/> </br>
             <input type="submit" id="modifPoste" value="Modifier le poste" class="btn btn-success"/>
         </form>
+        
     </div>
 </div>    
  
