@@ -6,7 +6,7 @@
             <?php
             for ($i = 0; $i < count($listePoste); $i++) {
                 ?>
-                        <option><?php echo $listePoste[$i]['nPoste']."/".$listePoste[$i]['nomPoste']."/".$listePoste[$i]['typePoste'] ?> </option>
+                        <option><?php echo $listePoste[$i]['nPoste']."/".$listePoste[$i]['nomPoste']."/".$listePoste[$i]['typePoste']."/".$listePoste[$i]['nSalle']?> </option>
                 <?php } ?>
         </select> </br> </br>
         <label style="color : red; font-style : italic"> Veillez à bien renseigner tous les champs même ceux à ne pas modifier en leur redonnant les mêmes données qu'ils ont déjà !</label>

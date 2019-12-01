@@ -2,16 +2,16 @@
 <div class="row">
     <div class="col-md-12">
         <form action="./?action=creer" method="POST">
-            <input type="text" name="numPostC" placeholder="Numéro du poste (ex : p1)" /><br />
-            <input type="text" name="nomPostC" placeholder="Nom du poste"  /><br />
-            <select name="listNomSal" id="listNomSalC">
+            <input type="text" name="numPoste" placeholder="Numéro du poste (ex : p1)" /><br />
+            <input type="text" name="nomPoste" placeholder="Nom du poste"  /><br />
+            <select name="numSalle" id="listNomSalC">
             <?php
             for ($i = 0; $i < count($listeSalle); $i++) {
                 ?>
-                        <option><?php echo $listeSalle[$i]['nomSalle'] ?> </option>
+                        <option><?php echo $listeSalle[$i]['nSalle'] ?> </option>
                 <?php } ?>
             </select> </br> 
-            <select name="listTypeC" id="listTypeC">
+            <select name="typePoste" id="listTypeC">
             <?php
             for ($i = 0; $i < count($listeType); $i++) {
                 ?>
