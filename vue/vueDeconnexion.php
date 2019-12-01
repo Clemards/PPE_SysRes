@@ -1,4 +1,4 @@
 <h1>Deconnexion</h1>
-Vous etes bien deconnecté
-<br />
-
+<div class="alert alert-success" role="alert">
+    Vous etes bien deconnecté
+</div> 

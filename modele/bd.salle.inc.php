@@ -130,9 +130,10 @@ function updatePoste($nomPoste, $typePoste, $numSalle, $numPoste) {
         $req->bindValue(':numS', $numSalle);
         $req->bindValue(':numP', $numPoste);
         $resultat = $req->execute();
+        return true;
     } catch (PDOException $e) {
         print "Erreur !: " . $e->getMessage();
-        var_dump($req);
+        return false;
         die();
     }
 }
@@ -149,9 +150,11 @@ function createPoste($nomPoste, $typePoste, $numSalle, $numPoste) {
             (nPoste, nomPoste, typePoste, nSalle, indIP)
             VALUES ('".$numPoste."', '".$nomPoste."', '".$typePoste."', '".$numSalle."' , '".$resindIP."');";
         $resultat = $cnx->query($req);
+        return true;
     } catch (PDOException $e) {
         print "Erreur !: " . $e->getMessage();
         die();
+        return false;
     }
 }
 ?>

@@ -3,8 +3,8 @@
 
     <input type="text" name="mailU" placeholder="Email de connexion" /><br />
     <input type="password" name="mdpU" placeholder="Mot de passe"  /><br />
-    <input type="submit" />
+    <input type="submit" value="Connexion" class="btn btn-success"/>
 
 </form>
-<br />
-<a href="./?action=inscription"> Inscription </a>
+<hr>
+<a href="./?action=inscription" class="btn btn-dark"> Inscription </a>

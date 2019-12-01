@@ -2,17 +2,18 @@
 <div class="row">
     <div class="col-md-12">
         <label>Poste existant :</label>
-        <select name="listNumPostAffich" id="listNumPostAffich">
+        <select class="btn btn-dark dropdown-toggle" name="listNumPostAffich" id="listNumPostAffich">
             <?php
             for ($i = 0; $i < count($listePoste); $i++) {
                 ?>
                         <option><?php echo $listePoste[$i]['nPoste']."/".$listePoste[$i]['nomPoste']."/".$listePoste[$i]['typePoste']."/".$listePoste[$i]['nSalle']?> </option>
                 <?php } ?>
         </select> </br> </br>
-        <label style="color : red; font-style : italic"> Veillez à bien renseigner tous les champs même ceux à ne pas modifier en leur redonnant les mêmes données qu'ils ont déjà !</label>
+        <label style="color : FireBrick ; font-style : italic"> Veillez à bien renseigner tous les champs même ceux à ne pas modifier en leur redonnant les mêmes données qu'ils ont déjà !</label>
+    <label style="color : FireBrick ; font-style : italic"> La page vous indiquera si le poste à bien été créer, dans le cas contraire réessayer !</label>
         <form action="./?action=modifier" method="POST">
             <label>Choix du poste :</label>
-            <select name="numPoste" id="listNumPost">
+            <select class="btn btn-dark dropdown-toggle" name="numPoste" id="listNumPost">
             <?php
             for ($i = 0; $i < count($listePoste); $i++) {
                 ?>
@@ -20,7 +21,7 @@
                 <?php } ?>
             </select> </br>
             <label>Choix de la salle :</label>
-            <select name="numSalle" id="listNumSal">
+            <select class="btn btn-dark dropdown-toggle" name="numSalle" id="listNumSal">
             <?php
             for ($i = 0; $i < count($listeSalle); $i++) {
                 ?>
@@ -28,7 +29,7 @@
                 <?php } ?>
             </select> </br>
             <label>Choix du type :</label>
-            <select name="typePoste" id="listTypeM">
+            <select class="btn btn-dark dropdown-toggle" name="typePoste" id="listTypeM">
             <?php
             for ($i = 0; $i < count($listeType); $i++) {
                 ?>
@@ -37,7 +38,7 @@
             </select> </br>
             <label>Choix du nom :</label>
             <input type="text" name ="nomPoste" d="nomPostM" placeholder="Nom du poste" /><br/> </br>
-            <input type="submit" id="modifPoste" value="Modifier le poste" class="btn btn-dark"/>
+            <input type="submit" id="modifPoste" value="Modifier le poste" class="btn btn-success"/>
         </form>
     </div>
 </div>    
