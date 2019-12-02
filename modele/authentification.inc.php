@@ -9,11 +9,13 @@ function login($mailU, $mdpU) {
 
     $util = getUtilisateurByMailU($mailU);
     $mdpBD = $util["password"];
+    $level = getLevelByMaiU($mailU);
 
     if (trim($mdpBD) == trim(crypt($mdpU, $mdpBD))) {
         // le mot de passe est celui de l'utilisateur dans la base de donnees
         $_SESSION["mailU"] = $mailU;
         $_SESSION["mdpU"] = $mdpBD;
+        $_SESSION["levelU"] = $level;
     }
 }
 

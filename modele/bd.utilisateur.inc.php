@@ -55,7 +55,21 @@ function addUtilisateur($mailU, $mdpU, $pseudoU) {
     return $resultat;
 }
 
+function getLevelByMaiU($mailU){
+    try {
+        $cnx = connexionMRBS();
 
+        $req = $cnx->prepare("select level from mrbs_users where email=:mailU");
+        $req->bindValue(':mailU', $mailU, PDO::PARAM_STR);
+        $req->execute();
+        
+        $resultat = $req->fetch(PDO::FETCH_ASSOC);
+    } catch (PDOException $e) {
+        print "Erreur !: " . $e->getMessage();
+        die();
+    }
+    return $resultat;
+}
 
 if ($_SERVER["SCRIPT_FILENAME"] == __FILE__) {
     // prog principal de test

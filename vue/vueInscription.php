@@ -5,7 +5,8 @@
     <input type="text" name="mailU" placeholder="Email de connexion" /><br />
     <input type="password" name="mdpU" placeholder="Mot de passe"  /><br />
     <input type="text" name="pseudoU" placeholder="Nom" /><br />
+ <hr>
 
-    <input type="submit" value="S'inscrire" />
+    <input type="submit" value="S'inscrire" class="btn btn-success"/>
 
 </form>

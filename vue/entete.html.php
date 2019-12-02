@@ -2,6 +2,11 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+        <link href="btstrp/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> </script>
+        <script>window.jQuery || document.write('<script src="btstrp/assets/js/vendor/jquery.min.js"><\/script>')</script>
+        <script src="btstrp/dist/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <title><?php echo $titre ?></title>
         <style type="text/css">
             @import url("css/base.css");
@@ -12,35 +17,20 @@
         <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
     </head>
     <body>
-    <nav>
-
-        <ul id="menuGeneral">
-            <li><a href="./?action=accueil">Accueil</a></li> 
-            <li><a href="./?action=liste">Liste</a></li> 
-            <li></li>
-            <li id="logo"><a href="./?action=accueil"><img src="images/logoBarre.png" alt="logo" /></a></li>
-            <li></li> 
-            <li><a href="./?action=cgu">CGU</a></li>
-
-            <li><a href="./?action=connexion"><img src="images/profil.png" alt="loupe" />Connexion</a></li>
-        </ul>
-    </nav>
-    <div id="bouton">
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
-    <ul id="menuContextuel">
-        <li><img src="images/logoBarre.png" alt="logo" /></li>
-        <?php if (isset($menuBurger)) { ?>
-            <?php for ($i = 0; $i < count($menuBurger); $i++) { ?>
-                <li>
-                    <a href="<?php echo $menuBurger[$i]['url']; ?>">
-                        <?php echo $menuBurger[$i]['label']; ?>
-                    </a>
-                </li>
-            <?php } ?>
-        <?php } ?>
-    </ul>
-
+      <?php /*if(!isset($_SESSION)) {*/ ?>
+           <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+           <div id="navbar-text">
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                 <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarNav">
+                 <ul class="navbar-nav navbar-center">
+                    <li class="nav-item"><a class="nav-link" href="./?action=accueil"><i class="fa fa-home"></i> Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./?action=liste"><i class="fa fa-list"></i> Liste</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./?action=connexion"><i class="fa fa-user"></i> Utilisateur</a></li>
+                 </ul>
+               </div>
+            </div>
+            </nav>
+         <?php /*}*/ ?>
     <div id="corps">

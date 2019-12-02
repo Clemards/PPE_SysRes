@@ -1,4 +1,4 @@
-#tagFood{
+/*#tagFood{
 	display:inline-block;
 	padding-left : 0px;
 	font-style: italic;
@@ -18,32 +18,31 @@ li.tag:hover{
 	border-width:1px;
 	border-style : solid;
 	border-color : #bbb;
-	background-color:rgba(0,0,0,0.1);	
+	background-color:rgba(0,0,0,0.1);
 }
 
 span.tag{
 	color:rgb(255,50,50);
-	
-}
+
+}*/
 
 div.card{
-    position : relative;
     text-align: center;
-    width:95%;
-    padding:10px;
-    margin : 10px;
     background-color : #fafafa;
     box-shadow: 1px 1px 4px #bbb;
-    border: 5px dashed #c9ab3e;
+	border: 5px solid #89acd1;
+	box-shadow: 5px 5px darkgrey;
+	margin-bottom: 10px;
+	padding: 5px;
 }
 div.photoCard>img{
-    
+
     position : relative;
     top:-10px;
     left : -10px;
     max-width : 200px;
     max-height: 140px;
-    
+
 }
 
 
@@ -58,7 +57,7 @@ div.tagCard{
     text-align: right;
 }
 
-#galerie{
+/*#galerie{
 	margin-top : 0px;
 	margin-bottom : 20px;
 	padding-left : 0px;
@@ -66,7 +65,7 @@ div.tagCard{
 }
 
 #galerie li{
-	display : inline-block;	
+	display : inline-block;
 }
 
 img.note{
@@ -80,11 +79,11 @@ img.galerie{
 
 #note {
     float : right;
-    
+
 }
 
 img.aimer{
-    vertical-align : middle;	
+    vertical-align : middle;
 }
 
 #critiques{
@@ -98,15 +97,37 @@ img.aimer{
 	padding:8px;
 	margin:5px;
 	border-radius: 2px;
+}*/
+
+#postes{
+	margin-right: 25px;
 }
 
-#posteTitle {
-	background-color : #c9ab3e;
-	color: white;
+h1 {
+	font-family: Impact, monospace, Verdana, Tahoma, sans-serif;
 	text-align: center;
 }
 
-#posteDesc {
-	background-color : #c9ab3e;
-	color: white;
+h2 {
+	font-family: Impact, monospace, Verdana, Tahoma, sans-serif;
+	text-align: center;
+}
+
+.imgAcc {
+	display: block;
+    margin-left: auto;
+	margin-right: auto;
+	max-width: 300px;
+}
+
+#txtAcc {
+	text-align: center;
+	font-size: 16px;
+}
+
+#txtFoot {
+	text-align: center;
+	font-size: 10px;
+	margin-top: 60px;
+	margin-bottom: -45px;
 }

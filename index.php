@@ -1,16 +1,11 @@
+<!-- Copyright Clément Arlandis, 2019 -->
+
 <?php
-include "getRacine.php";
-include "$racine/controleur/controleurPrincipal.php";
-
-if (isset($_GET["action"])){
-    $action = $_GET["action"];
-}
-else{
-    
-    $action = "defaut";
-}
-
-$fichier = controleurPrincipal($action);
-include "$racine/controleur/$fichier";
-?>
-     
+  include "getRacine.php";
+  include "$racine/controleur/controleurPrincipal.php";
+ 
+  $action = (isset($_GET["action"])) ? $_GET["action"] : $action = (!isset($_SESSION)) ? "connexion" : "defaut";
+ 
+  $fichier = controleurPrincipal($action);
+  include "$racine/controleur/$fichier";
+  ?>
