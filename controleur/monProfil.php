@@ -7,12 +7,6 @@ include_once "$racine/modele/bd.utilisateur.inc.php";
 /*include_once "$racine/modele/bd.typecuisine.inc.php";
 include_once "$racine/modele/bd.resto.inc.php";*/
 
-// creation du menu burger
-$menuBurger = array();
-$menuBurger[] = Array("url"=>"./?action=profil","label"=>"Consulter mon profil");
-$menuBurger[] = Array("url"=>"./?action=updProfil","label"=>"Modifier mon profil");
-
-
 // recuperation des donnees GET, POST, et SESSION
 
 // appel des fonctions permettant de recuperer les donnees utiles a l'affichage 

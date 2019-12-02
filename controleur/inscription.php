@@ -5,12 +5,6 @@ if ($_SERVER["SCRIPT_FILENAME"] == __FILE__) {
 }
 include_once "$racine/modele/bd.utilisateur.inc.php";
 
-// creation du menu burger
-$menuBurger = array();
-$menuBurger[] = Array("url"=>"./?action=connexion","label"=>"Connexion");
-$menuBurger[] = Array("url"=>"./?action=inscription","label"=>"Inscription");
-
-
 $inscrit = false;
 $msg="";
 // recuperation des donnees GET, POST, et SESSION
