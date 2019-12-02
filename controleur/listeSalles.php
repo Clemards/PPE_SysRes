@@ -4,9 +4,6 @@ if ( $_SERVER["SCRIPT_FILENAME"] == __FILE__ ){
 }
 include_once "$racine/modele/bd.salle.inc.php";
 
-// recuperation des donnees GET, POST, et SESSION
-;
-
 // appel des fonctions permettant de recuperer les donnees utiles a l'affichage 
 $listeSalle = getSalles();
 
